@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de reserva de viagem</title>
+</head>
+<body>
+    <section>
+        <h2>Formulario de reserva de viagem</h2>
+        <form method="GET" action="">
+
+            <fieldset>
+                <legend>Dados</legend>
+                <label>Nome:</label><br>
+                <input type="text" name="nome"><br><br>
+    
+                <label>Email:</label><br>
+                <input type="email" required name="email"><br><br>
+            </fieldset><br>
+            
+
+            <fieldset>
+                <legend>Serviços desejados?</legend>
+                <label>
+                    <br><input type="checkbox" name="passagens" value="Passagens"> Compra de passagens
+                </label>
+                <label>
+                    <br><input type="checkbox" name="hospedagem" value="Hospedagem"> Reverva de hospedagem
+                </label>
+                <label>
+                    <br><input type="checkbox" name="veiculos" value="Veiculos"> Aluguel de veículos<br><br>
+                </label>    
+            </fieldset><br>
+
+            <fieldset>
+                <legend>Forma de pagamento</legend>
+                <label>
+                    <br><input type="radio" name="formaPagamento" value="Cartão de crédito"> Cartão de Crédito
+                </label>
+                <label>
+                    <br><input type="radio" name="formaPagamento" value="boleto"> Boleto
+                </label>
+                <label>
+                    <br><input type="radio" name="formaPagamento" value="pix"> PIX<br><br>
+                </label>
+            </fieldset><br>
+
+            <fieldset>
+                <legend>Prazo de Pagamento</legend>
+                <select name="prazoPahamento">
+                    <option value="aVista">A vista</option>
+                    <option value="5x">5x sem juros</option>
+                    <option value="10x" selected>10x com juros</option>
+                </select>
+            </fieldset><br>
+
+            <label>Comentário:</label><br>
+            <textarea rows="5" name="comentário"></textarea><br><br>
+
+            <button>Salvar</button>
+            
+            <footer>
+                <p>Desenvolvido por: Marcos Eric</p>
+            </footer>
+</body>
+</html>
